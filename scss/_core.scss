@@ -1,0 +1,223 @@
+/*!
+Theme Name: Aweco
+Theme URI: http://aweco.anilguzey.com/
+Author: Anil Guzey
+Author URI: http://anilguzey.com/
+Description: Aweco can be used for any type of blog. It works seamlessly on all devices. Aweco is a stylish template for all your blog projects and creative output. Minimalist and easy to use, it has everything you need to start your website.
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: aweco
+Tags: custom-colors, custom-background, custom-logo, custom-menu, featured-images, threaded-comments,
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	letter-spacing: -.5px;
+    font-family: 'Poppins', sans-serif;
+}
+.attachment {
+    * {
+        word-wrap: break-word!important;
+        word-break: break-word!important
+    }
+}
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+    &:focus {
+        background-color: #f2f2f2;
+        clip: auto !important;
+        clip-path: none;
+        color: inherit;
+        display: block;
+        font-size: 0.875rem;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+    }
+}
+::selection {
+    background-color: $aweco-primary;
+    color:#FFFFFF;
+}
+
+.cat-links {
+    font-size:13px;
+    a {
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: .5px;
+        text-decoration: none;
+    }
+}
+
+a{ transition: all 175ms;
+}
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+@for $i from 2 through 9 {
+
+	.gallery-columns-#{$i} {
+		grid-template-columns: repeat($i, 1fr);
+	}
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.wp-block-button {
+    margin:1rem 0rem;
+    .wp-block-button__link {
+        background-color: #212529;
+        display: inline-block !important;
+        line-height: 1.5;
+        width: auto;
+        color: #fff;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 0 !important;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        -webkit-transition: all 200ms;
+        transition: all 200ms;
+    }
+}
+
+.contact-submit {
+    button{
+        background-color: #212529;
+        display: inline-block !important;
+        line-height: 1.5;
+        width: auto;
+        color: #fff;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border-radius: 0 !important;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        -webkit-transition: all 200ms;
+        transition: all 200ms;
+    }
+}
+.jp-sharing-input-touch .sd-content ul li {
+    padding-left:0!important;
+}

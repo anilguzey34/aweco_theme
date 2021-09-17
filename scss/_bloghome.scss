@@ -1,0 +1,59 @@
+.blog-post {
+
+       .aweco-standard-format {
+           .card {
+               border:0;
+               padding:0 .25rem;
+             
+               .card-body {
+                   padding-left:.125rem;
+                   padding-right: .125rem;
+               }
+           }
+       }
+
+    .featured-image-content {
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 280px;
+            object-fit: cover;
+            object-position: center center;
+            display: block;
+            border:0;
+        }
+    }
+
+    @media (min-width:767.99px) {
+        .featured-image-content {
+            img {
+                height: 225px;
+            }
+        }
+    }
+
+    @media (max-width:540.90px) {
+        .featured-image-content {
+            margin-left: -1rem!important;
+            margin-right: -1rem!important;
+            img {
+                min-height: 230px;
+            }
+        }
+    }
+
+    .entry-summary {
+        p {
+            margin-bottom: .625rem !important;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            color: var(--bs-secondary);
+            font-family: 'PT Serif', serif;
+        }
+
+    }
+}
+
+
